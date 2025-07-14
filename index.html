@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Malla Curricular Medicina</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Malla Curricular - Medicina Humana</h1>
+
+  <!-- 1° Ciclo -->
+  <div class="semester">
+    <h2>1° Ciclo</h2>
+    <div class="course active" id="quimica" onclick="completeAndActivate('quimica', ['bioquimica'])">Química</div>
+    <div class="course active" id="matematica" onclick="completeAndActivate('matematica', ['estadistica'])">Matemática</div>
+    <div class="course active" id="lengua" onclick="completeAndActivate('lengua', ['redaccion'])">Lengua y Oratoria</div>
+    <div class="course active" id="desempeno" onclick="completeAndActivate('desempeno', ['realidad'])">Desempeño Universitario</div>
+    <div class="course active" id="biologia" onclick="completeAndActivate('biologia', ['morfo1','anatomia','genetica','desarrollo'])">Biología Celular y Molecular</div>
+    <div class="course active" id="introduccion" onclick="completeAndActivate('introduccion', [])">Introducción a la Medicina</div>
+  </div>
+  <!-- 2° Ciclo -->
+  <div class="semester">
+    <h2>2° Ciclo</h2>
+    <div class="course inactive" id="bioquimica" onclick="completeAndActivate('bioquimica', ['infectologia'])">Bioquímica</div>
+    <div class="course inactive" id="estadistica" onclick="completeAndActivate('estadistica', ['bioestadistica'])">Estadística General</div>
+    <div class="course inactive" id="redaccion" onclick="completeAndActivate('redaccion', [])">Redacción General</div>
+    <div class="course inactive" id="realidad" onclick="completeAndActivate('realidad', ['fundamentos'])">Realidad Nacional</div>
+    <div class="course inactive" id="morfo1" onclick="completeAndActivate('morfo1', ['morfo2','morfo3','inmunologia','infectologia'])">Morfofisiología I</div>
+    <div class="course inactive" id="anatomia" onclick="completeAndActivate('anatomia', ['morfo2','morfo3'])">Anatomía General</div>
+    <div class="course inactive" id="genetica" onclick="completeAndActivate('genetica', [])">Genética Médica</div>
+    <div class="course inactive" id="desarrollo" onclick="completeAndActivate('desarrollo', [])">Desarrollo y Crecimiento</div>
+    <div class="course active" id="investigacion" onclick="completeAndActivate('investigacion', [])">Introducción a la Investigación</div>
+  </div>
+  <!-- 3° Ciclo -->
+  <div class="semester">
+    <h2>3° Ciclo</h2>
+    <div class="course inactive" id="morfo2" onclick="completeAndActivate('morfo2', ['morfo4','semiologiaSim','semiologia'])">Morfofisiología II</div>
+    <div class="course inactive" id="morfo3" onclick="completeAndActivate('morfo3', ['morfo4','semiologiaSim','semiologia'])">Morfofisiología III</div>
+    <div class="course inactive" id="inmunologia" onclick="completeAndActivate('inmunologia', ['semiologiaSim','semiologia'])">Inmunología</div>
+    <div class="course active" id="filosofia" onclick="completeAndActivate('filosofia', ['saludMental','fundamentos'])">Filosofía</div>
+    <div class="course inactive" id="bioestadistica" onclick="completeAndActivate('bioestadistica', ['metodologia','epidemiologia'])">Bioestadística</div>
+  </div>
+  <!-- 4° Ciclo -->
+  <div class="semester">
+    <h2>4° Ciclo</h2>
+    <div class="course inactive" id="morfo4" onclick="completeAndActivate('morfo4', ['semiologiaSim','semiologia'])">Morfofisiología IV</div>
+    <div class="course inactive" id="infectologia" onclick="completeAndActivate('infectologia', ['farmacologia'])">Infectología Básica</div>
+    <div class="course inactive" id="fisiopato1" onclick="completeAndActivate('fisiopato1', ['semiologiaSim','semiologia'])">Fisiopatología I</div>
+    <div class="course inactive" id="bioetica" onclick="completeAndActivate('bioetica', ['seguridad','legal','cuidados'])">Bioética</div>
+  </div>
+  <!-- 5° Ciclo -->
+  <div class="semester">
+    <h2>5° Ciclo</h2>
+    <div class="course inactive" id="saludMental" onclick="completeAndActivate('saludMental', [])">Salud Mental</div>
+    <div class="course inactive" id="fundamentos" onclick="completeAndActivate('fundamentos', [])">Fundamentos de Medicina Intercultural</div>
+    <div class="course inactive" id="fisiopato2" onclick="completeAndActivate('fisiopato2', ['semiologiaSim','semiologia','anatomiaPatologica'])">Fisiopatología II</div>
+    <div class="course inactive" id="anatomiaPatologica" onclick="completeAndActivate('anatomiaPatologica', ['medicinaInterna1'])">Anatomía Patológica</div>
+  </div>
+  <!-- 6° Ciclo -->
+  <div class="semester">
+    <h2>6° Ciclo</h2>
+    <div class="course inactive" id="semiologiaSim" onclick="completeAndActivate('semiologiaSim', ['medicinaInterna1','legal'])">Semiología Basada en la Simulación</div>
+    <div class="course inactive" id="semiologia" onclick="completeAndActivate('semiologia', ['medicinaInterna1','legal','ecografia'])">Semiología</div>
+    <div class="course inactive" id="farmacologia" onclick="completeAndActivate('farmacologia', ['nutricion'])">Farmacología</div>
+    <div class="course inactive" id="apoyoDiagnostico" onclick="completeAndActivate('apoyoDiagnostico', ['ecografia'])">Apoyo al Diagnóstico</div>
+  </div>
+  <!-- 7° Ciclo -->
+  <div class="semester">
+    <h2>7° Ciclo</h2>
+    <div class="course inactive" id="seguridad" onclick="completeAndActivate('seguridad', [])">Seguridad del Paciente y Calidad</div>
+    <div class="course inactive" id="nutricion" onclick="completeAndActivate('nutricion', [])">Nutrición y Prácticas Saludables</div>
+    <div class="course inactive" id="metodologia" onclick="completeAndActivate('metodologia', ['medicinaBasada'])">Metodología de la Investigación</div>
+    <div class="course inactive" id="medicinaInterna1" onclick="completeAndActivate('medicinaInterna1', ['medicinaInterna2'])">Medicina Interna I</div>
+    <div class="course inactive" id="epidemiologia" onclick="completeAndActivate('epidemiologia', ['saludPublica','medicinaBasada','atencionPrimaria'])">Epidemiología</div>
+  </div>
+  <!-- 8° Ciclo -->
+  <div class="semester">
+    <h2>8° Ciclo</h2>
+    <div class="course inactive" id="saludPublica" onclick="completeAndActivate('saludPublica', [])">Salud Pública</div>
+    <div class="course inactive" id="medicinaInterna2" onclick="completeAndActivate('medicinaInterna2', ['terapeutica','simulacionClinica','medicinaInterna3'])">Medicina Interna II</div>
+    <div class="course inactive" id="medicinaBasada" onclick="completeAndActivate('medicinaBasada', ['tesis1'])">Medicina Basada en la Evidencia</div>
+    <div class="course inactive" id="atencionPrimaria" onclick="completeAndActivate('atencionPrimaria', ['informatica','gerencia'])">Atención Primaria en Salud</div>
+  </div>
+  <!-- 9° Ciclo -->
+  <div class="semester">
+    <h2>9° Ciclo</h2>
+    <div class="course inactive" id="tesis1" onclick="completeAndActivate('tesis1', ['tesis2'])">Tesis I</div>
+    <div class="course inactive" id="terapeutica" onclick="completeAndActivate('terapeutica', ['cuidados','casos1'])">Terapéutica</div>
+    <div class="course inactive" id="simulacionClinica" onclick="completeAndActivate('simulacionClinica', ['simulacionQuirurgica','cirugia','casos1','simulacionPediatrica','pediatria'])">Simulación Clínica Integrada</div>
+    <div class="course inactive" id="medicinaInterna3" onclick="completeAndActivate('medicinaInterna3', ['simulacionQuirurgica','cirugia','casos1','simulacionPediatrica','pediatria'])">Medicina Interna III</div>
+  </div>
+  <!-- 10° Ciclo -->
+  <div class="semester">
+    <h2>10° Ciclo</h2>
+    <div class="course inactive" id="simulacionQuirurgica" onclick="completeAndActivate('simulacionQuirurgica', ['simulacionGineco','gineco'])">Simulación Quirúrgica</div>
+    <div class="course inactive" id="ecografia" onclick="completeAndActivate('ecografia', [])">Ecografía</div>
+    <div class="course inactive" id="cuidados" onclick="completeAndActivate('cuidados', [])">Cuidados Paliativos y Rehabilitación Física</div>
+    <div class="course inactive" id="cirugia" onclick="completeAndActivate('cirugia', ['simulacionGineco','gineco'])">Cirugía</div>
+    <div class="course inactive" id="casos1" onclick="completeAndActivate('casos1', ['casos2'])">Análisis de Casos I</div>
+  </div>
+  <!-- 11° Ciclo -->
+  <div class="semester">
+    <h2>11° Ciclo</h2>
+    <div class="course inactive" id="tesis2" onclick="checkAndActivateFinal()">Tesis II</div>
+    <div class="course inactive" id="simulacionPediatrica" onclick="checkAndActivateFinal()">Simulación Pediátrica</div>
+    <div class="course inactive" id="simulacionGineco" onclick="checkAndActivateFinal()">Simulación Gineco-Obstetricia</div>
+    <div class="course inactive" id="pediatria" onclick="checkAndActivateFinal()">Pediatría</div>
+    <div class="course inactive" id="gineco" onclick="checkAndActivateFinal()">Ginecología y Obstetricia</div>
+  </div>
+  <!-- 12° Ciclo -->
+  <div class="semester">
+    <h2>12° Ciclo</h2>
+    <div class="course inactive" id="preinternado" onclick="checkAndActivateFinal()">Pre-Internado</div>
+    <div class="course inactive" id="informatica" onclick="checkAndActivateFinal()">Informática Biomédica</div>
+    <div class="course inactive" id="gerencia" onclick="checkAndActivateFinal()">Gerencia en Salud</div>
+    <div class="course inactive" id="casos2" onclick="checkAndActivateFinal()">Análisis de Casos II</div>
+  </div>
+  <!-- 13° Ciclo -->
+  <div class="semester">
+    <h2>13° Ciclo</h2>
+    <div class="course inactive" id="trabajo" onclick="checkAndActivateFinal()">Trabajo de Investigación</div>
+    <div class="course inactive" id="internadoPediatria" onclick="checkAndActivateFinal()">Internado en Pediatría</div>
+    <div class="course inactive" id="internadoMedicina" onclick="checkAndActivateFinal()">Internado en Medicina</div>
+    <div class="course inactive" id="internadoCirugia" onclick="checkAndActivateFinal()">Internado en Cirugía</div>
+    <div class="course inactive" id="internadoGineco" onclick="checkAndActivateFinal()">Internado en Ginecología y Obstetricia</div>
+  </div>
+
+<script src="scripts.js"></script>
+</body>
+</html>
