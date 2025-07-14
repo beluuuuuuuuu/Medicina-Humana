@@ -1,47 +1,41 @@
 body {
   font-family: Arial, sans-serif;
-  text-align: center;
-  background: #f7f7f7;
+  background: #fff;
+  padding: 20px;
 }
 
 h1 {
-  color: #af69cd;
+  text-align: center;
 }
 
-.semester {
-  margin: 20px;
-  padding: 20px;
-  border: 2px solid #af69cd;
-  border-radius: 8px;
+.malla {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
 }
 
 .course {
-  margin: 10px;
-  padding: 15px;
-  border-radius: 5px;
-  display: inline-block;
-  min-width: 200px;
-}
-
-/* Activo */
-.course.active {
-  background-color: #f99aaa;
-  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
   cursor: pointer;
+  user-select: none;
 }
 
-/* Inactivo */
-.course.inactive {
-  background-color: rgba(255, 255, 255, 0.6);
-  border: 2px dotted #000000;
-  color: #555;
-  cursor: default;
-  pointer-events: none;
+.course.active {
+  background: #f99aaa; /* Rosado activo */
+  color: #fff;
 }
 
-/* Completado */
 .course.completed {
-  background-color: #af69cd;
-  color: white;
-  cursor: default;
+  background: #af69cd; /* Morado completado */
+  color: #fff;
+}
+
+.course.inactive {
+  background: rgba(255,255,255,0.4);
+  border: 2px dotted #999;
+  color: #333;
+  pointer-events: none;
+  opacity: 0.6;
 }
